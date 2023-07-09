@@ -9,8 +9,6 @@ services:
     volumes:
       - "app-storage:/var/www/storage"
       - "./env:/var/www/.env"
-    # The port statement makes Pixelfed run on Port 8080, no SSL.
-    # For a real instance you need a frontend proxy instead!
     ports:
       - "8080:80"
     depends_on:
