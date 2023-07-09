@@ -13,7 +13,7 @@ services:
   ## App and Worker
   app:
     # Comment to use dockerhub image
-    image: pixelfed/pixelfed:latest
+    image: zknt/pixelfed:latest
     restart: unless-stopped
     env_file:
       - .env.docker
@@ -31,7 +31,7 @@ services:
       - redis
 
   worker:
-    image: pixelfed/pixelfed:latest
+    image: zknt/pixelfed:latest
     restart: unless-stopped
     env_file:
       - .env.docker
